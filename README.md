@@ -20,11 +20,27 @@ anchor --version
 
 # Backend
 
-1 - First set your Solana cluster to run on your machine:
+1 - Install node dependencies:
+```bash
+pnpm i
+```
+2 - Configure Solana to start a cluster on your machine:
 ```bash
 solana config set --url localhost
 ```
-2 - Then start the Solana cluster:
+3 - Then start the Solana cluster:
 ```bash
 solana-test-validator
+```
+4 - Build the workspace and deploy the program to the blockchain:
+```bash
+anchor build && anchor deploy
+```
+  - This will install rust dependencies and create the IDL file (think of it being like a ABI file). 
+
+# Frontend
+
+1 - Install node dependencies:
+```bash
+pnpm i
 ```
