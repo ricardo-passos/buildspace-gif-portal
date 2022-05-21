@@ -12,7 +12,7 @@ rustup --version && rustc --version && cargo --version
 solana --version
 ```
 3 - Lastly, you'll need Anchor: https://project-serum.github.io/anchor/getting-started/installation.html#install-anchor
-  - Anchor is a framework we use maily to compile our program/smart contract and deploy it to the blockchain. If you've tinkered with Ethreum, you can think of it being like a Hardhat.
+  - Anchor is a framework we use mainly to compile our program/smart contract and deploy it to the blockchain. If you've tinkered with Ethreum, you can think of it being like a Hardhat.
   - If everything goes well, this commands should work:
 ```bash
 anchor --version
@@ -28,7 +28,7 @@ pnpm i
 ```bash
 solana config set --url localhost
 ```
-3 - Then start the Solana cluster:
+3 - Then start the Solana cluster (it was installed on step 2 of setup):
 ```bash
 solana-test-validator
 ```
@@ -36,7 +36,7 @@ solana-test-validator
 ```bash
 anchor build && anchor deploy
 ```
-  - This will install rust dependencies and create the IDL file (think of it being like a ABI file). 
+  - This will install the rust dependencies and create the IDL file (think of it being like a ABI file). 
 
 # Frontend
 
